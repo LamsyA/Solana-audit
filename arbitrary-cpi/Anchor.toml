@@ -1,0 +1,21 @@
+[toolchain]
+
+[features]
+seeds = false
+skip-lint = false
+
+[programs.localnet]
+arbitrary_cpi = "6SLvRiYmMmrrUEKLwun1XUaWtfmBk59A3WV5jB1Jvihf"
+character-metadata = "4DcK4stssP5HNL2PMS2sFTouoUmu1jXBdqm6UdTMGg1A"
+fake-metadata = "EttyHzM1sadK27VCkP4WnSpLhL4MfpbTNAGsVMto1Joa"
+gameplay = "CHDqMZGzfhENqPDUae6KndzFJnoz6bG1RDyn1Zi8gvoU"
+
+[registry]
+url = "https://api.apr.dev"
+
+[provider]
+cluster = "Localnet"
+wallet = "/Users/mac/.config/solana/id.json"
+
+[scripts]
+test = "yarn run ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
